@@ -24,10 +24,10 @@ window.onload = function() {
   // console.log("outside: " + x);
 
             // LET vs VAR
-  var items = document.getElementByTagName("li");
+  var items = document.getElementsByTagName("li");
 
   for(let x = 0; x < items.length; x++){
-    itemss[x].onclick = function(){
+    items[x].onclick = function(){
       console.log(x);
     }
   }
