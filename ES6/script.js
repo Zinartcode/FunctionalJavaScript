@@ -74,16 +74,54 @@ window.onload = function() {
     // addNums(nums);  //logs 3,4,9undefinedundefined (expects 3 elements, not 1 array)
     // addNums(...nums);  //logs 16(sum of nums)
 
-            //TEMPLATE STRINGS
 
-    var temp = 'hello,
+            //TEMPLATE STRINGS (use ``)
 
-     my name is Arthur';
+    // var temp = `hello,
+    //
+    //  my name is Arthur`; //NOT A SINGLE QUOTE '', ``
+    //
+    //  console.log(temp); //LOGS WITH SPACES AND EMPTY LINES
+    //
+    //  function greeting(name, age){
+    //    console.log(`my name is ${name}
+    //      my age is ${age}, next year will be ${age+1}`);
+    //  }
+    //  greeting("Arthur", 30);
 
-     console.log(temp);
+
+            //NEW STRING METHODS
+
+    // var str = "I'm a striiing ";
+    //
+    // console.log(str.repeat(5));
+    //
+    // console.log(str.startsWith("I'm")); //RETURNS TRUE
+    //
+    // console.log(str.endsWith("striii", str.length - 3)); //RETURNS TRUE
+    //
+    // console.log(str.includes("striiing")); //RETURNS TRUE
 
 
+    // var youSay = "goodbye";
+    // if (youSay.startsWith("goodbye")){  //EXAMPLE OF USE
+    //   var iSay = "hello";
+    // }
+    // console.log(`you say ${youSay}, I say ${iSay}`);
 
+
+            //ARROW FUNCTIONS =>
+
+    var greeting = function(){ //INITIAL FUNCTION
+      console.log("Heeyya");
+    }
+    greeting();
+
+    var greeting = () => console.log("Whassap"); //ES6 SYNTAX
+    greeting();
+
+    var greeting = name => console.log(`${name} says wassap`);
+    greeting("Arthur");
 
 
 }
