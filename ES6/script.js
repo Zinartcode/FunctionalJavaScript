@@ -112,16 +112,66 @@ window.onload = function() {
 
             //ARROW FUNCTIONS =>
 
-    var greeting = function(){ //INITIAL FUNCTION
-      console.log("Heeyya");
-    }
-    greeting();
+//     var greeting = function(){ //INITIAL FUNCTION
+//       console.log("Heeyya");
+//     }
+//     greeting();
+//
+//     var greeting = () => console.log("Whassap"); //ES6 SYNTAX
+//     greeting();
+//
+//     var greeting = name => console.log(`${name} says wassap`);
+//     greeting("Arthur");
+//
+//     var someobject = {
+//       name: "Arthur",
+//       chop(x){
+//         window.setInterval(() => {  //ARROW ALLOWS 'this' TO REFFER TO SOMEOBJECT
+//           if(x > 0){
+//             console.log(this.name + " chopped the enemy");
+//             x--;
+//           }
+//         }, 1000);
+//       }
+//     };
+//
+// someobject.chop(5);
 
-    var greeting = () => console.log("Whassap"); //ES6 SYNTAX
-    greeting();
 
-    var greeting = name => console.log(`${name} says wassap`);
-    greeting("Arthur");
+          //SETS
 
+  // var names = new Set();
+  // names.add("Arthur").add("John").add("Bob").add("John");  //Set CREATES ARRAY WITHOUT DUPLICATES
+  // console.log(names);
+  // console.log(names.size);  // LOGS 3
+  // names.delete("John");  // ONE AT A TIME
+  // console.log(names.has("Bob"));  // LOGS TRUE
+  // names.clear();  //REMOVES EVERYTHING FROM SET
+  // console.log(names);
+  //
+  // var people = ["John", "Bob", "Patric", "Bob", "Kevin"];
+  //
+  // var refinedPeople = new Set(people);  //NO DUPLICATES, BUT SET
+  // console.log(refinedPeople);
+  // people = [...refinedPeople];  // NO DUPLICATES, ARRAY
+  // console.log(people);
+
+
+          //GENERATORS '*'
+
+  // function* gen(){  //* MAKES FUNCTION A GENERATOR
+  //   yield console.log("pear"); // YELD PAUSES EXECUTION
+  //   yield console.log("banana");
+  //   yield console.log("apple");
+  //   yield console.log("all done");
+  //   yield "mango";
+  // }
+  //
+  // var myGen = gen();
+  // myGen.next();  //LOGS peach
+  // myGen.next();  //LOGS banana
+  // myGen.next();  //LOGS apple
+  // myGen.next();  //LOGS all done
+  // console.log(myGen.next()); //RETURNS Object {value: "mango", done: false}
 
 }
